@@ -1,8 +1,8 @@
-module BinTree where
+module BinTree (Tree, fromList) where
 
 {-
   here we introduce fromList function, which converts list representation of nodes to binary tree structure
-  the nodes is filled level by level with consecutive elements of the list, where Nothing represents a leaf (empty node)
+  the tree is filled level by level with consecutive elements of the list, where Nothing represents a leaf (empty node)
 
   e.g. [1, 2, 3, Nothing, 4, 5, 6, 7] ~ [[1], [2,3], [empty, 4, 5, 6], [7, empty, empty, empty, empty, empty], [empty, empty]]
                                     |
