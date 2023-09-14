@@ -2,7 +2,7 @@
 
 {-
 FIFO queue based on two lists with O(1) head, snoc, tail operations (amortized)
-invariant: front part is not longer than the back part
+invariant: the back part is not longer than the front part
 note that reversal of the back part is not forced unless the front is empty
 see BankersQueue in Purely Functional Data Structures by Chris Okasaki
 -}
