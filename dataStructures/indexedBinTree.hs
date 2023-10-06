@@ -1,7 +1,7 @@
 module IndexedBinTree (BinTree, getElem, getElemSafe) where
 
 {-
-Examples of getElem and getElemSafe functions returning k-ths element in foldables and traversables via state monad, respectively
+Examples of getElem and getElemSafe functions returning k-th (counting from 0) element in foldables and traversables via state monad, respectively
 Relevant instances for binary tree are defined below.
 For binary tree, the operation returns k-th element as visualized left to right
 In case of BST, it means we get k-th element in order
