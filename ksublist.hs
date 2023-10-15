@@ -30,8 +30,8 @@ sub' n = filter ((== n) . length) . foldM (\xs x -> [x : xs, xs]) []
 -- [[3,2,1],[4,2,1],[4,3,1],[4,3,2]]
 
 {-
-the benefit of this approach is that we can modify it to avoid to avoid useless computations,
-add counter to start element, indicating how many elements are left to be generated for a sublist at given step
+the benefit of this approach is that we can modify it to avoid useless computations
+add counter to initial element, indicating how many elements are left to be generated for a sublist at given step
 as the counter reaches 0, there is only one choice - the list generated so far itself
 still, we need to filter out sublists of the demanded size (not shorter)
 -}
